@@ -47,7 +47,8 @@ print(f'I was born in {home_town["city"]}, {home_town["country"]} - population o
 # "state = California"
 # "population = 58000"
 
-
+for item in home_town.items():
+    print(item)
 
 # Exercise 6
 # Create an empty list named cohort.
