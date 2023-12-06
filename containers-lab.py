@@ -17,3 +17,13 @@ print(foods)
 
 for food in foods:
     print(food)
+
+# Using a for loop, print just the last two food strings from foods.
+# Hint: Use the slice operator to select the last two foods
+
+for food in foods:
+    print(foods[2:4])
+
+for food in foods:
+    last_two = slice(2,4)
+    print(foods[last_two])
