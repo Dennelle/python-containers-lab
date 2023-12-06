@@ -12,7 +12,7 @@ print(f'This is the last student {students[-1]}')
 # Create a tuple named foods containing the same number of foods (strings) as there are names in the students list.
 # Use a for loop to print out the string "[food goes here] is a good food".
 
-foods = ('chicken','bread','lettuce','tomato')
+foods = ('BLT','Mac and Cheese','Peanut Butter and Jelly','Grilled Cheese')
 print(foods)
 
 for food in foods:
@@ -62,11 +62,26 @@ for item in home_town.items():
 # Iterate over the cohort list, printing out each item (it's not necessary to format the dictionaries).
 cohort = []
 
-for student in students:
-    print(student)
+# for student in students:
+#     print(student)
 
-new_students = enumerate(students)
-print(list(new_students))
+# new_students = enumerate(students)
+# print(list(new_students))
+
+# new_foods = enumerate(foods)
+# print(list(new_foods))
+
+# cohort.append(students)
+# cohort.append(foods)
+
+# print(cohort)
+
+for i in range(len(students)):
+    student_dict ={'student':students[i], 'fav_food':foods[i]}
+    cohort.append(student_dict)
+
+for item in cohort:
+    print(item)
 
 
 # Exercise 7
